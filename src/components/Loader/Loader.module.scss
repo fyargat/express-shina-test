@@ -1,0 +1,24 @@
+@import "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  background: conic-gradient(#0000 10%, $oslo-gray);
+  border-radius: 50%;
+  animation: spinner-zp9dbg 1s infinite linear;
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+}
+
+@keyframes spinner-zp9dbg {
+  to {
+    transform: rotate(1turn);
+  }
+}

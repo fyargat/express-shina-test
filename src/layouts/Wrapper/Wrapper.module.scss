@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media only screen and (min-width: $tablet) {
+    padding: 0 10px;
+  }
+}

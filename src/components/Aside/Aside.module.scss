@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.container {
+  display: none;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+
+  @media only screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

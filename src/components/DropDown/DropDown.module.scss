@@ -1,0 +1,82 @@
+@import "../../styles/variables.scss";
+
+.container {
+  width: 100%;
+  background-color: $cape-cod;
+
+  @media only screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  padding: 5px;
+  font-size: 14px;
+  box-shadow: -2px 2px 10px $dark;
+
+  &MenuIsVisible {
+    box-shadow: none;
+  }
+
+  @media only screen and (min-width: $mobile) {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.1s ease;
+  }
+
+  &Rotate {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.menu {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.item {
+  padding: 10px 5px;
+  font-size: 14px;
+  line-height: 18px;
+  border-top: 1px solid $oslo-gray;
+  border-bottom-width: 0;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (min-width: $mobile) {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  &Selected {
+    background-color: $cape-cod-light;
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-weight: 400;
+  font-family: ArialMT;
+  font-style: normal;
+  src: url("../assets/fonts/ArialMT/ArialMT-regular.eot");
+  src: url("../assets/fonts/ArialMT/ArialMT-regular.eot")
+      format("embedded-opentype"),
+    url("../assets/fonts/ArialMT/ArialMT-regular.woff") format("woff"),
+    url("../assets/fonts/ArialMT/ArialMT-regular.woff2") format("woff2"),
+    url("../assets/fonts/ArialMT/ArialMT-regular.ttf") format("truetype");
+  font-display: swap;
+}

@@ -1,0 +1,37 @@
+@import "../../styles/variables.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  @media only screen and (min-width: $tablet) {
+    padding: 20px 0;
+  }
+}
+
+.side {
+  &Left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+
+    @media only screen and (min-width: $tablet) {
+      position: relative;
+      flex-grow: 1;
+      margin-right: 6px;
+    }
+  }
+
+  &Right {
+    width: 100%;
+
+    @media only screen and (min-width: $tablet) {
+      flex: 1;
+      width: auto;
+    }
+  }
+}

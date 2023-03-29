@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.container {
+  width: 100%;
+  max-width: 482px;
+  min-height: 74px;
+  padding: 10px 14px;
+  background-color: $cape-cod;
+  border: 1px solid $shark;
+  box-shadow: 1.5px 1.3px 9.5px 0.5px rgb(0 0 0 / 30%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+
+  &Disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &Selected {
+    background-color: $cape-cod-light;
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.title {
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.chips {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

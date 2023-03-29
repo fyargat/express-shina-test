@@ -1,0 +1,24 @@
+{
+  "tabWidth": 2,
+  "printWidth": 80,
+  "semi": true,
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "trailingComma": "all",
+  "singleQuote": false,
+  "bracketSpacing": true,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@/constants(.*)$",
+    "^@/api(.*)$",
+    "^@/utils(.*)",
+    "^@/hooks/(.*)$",
+    "^@/pages/(.*)$",
+    "^@/layouts/(.*)$",
+    "^@/components/(.*)$",
+    "^@/types/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
